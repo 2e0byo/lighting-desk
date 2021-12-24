@@ -8298,6 +8298,13 @@ vue-loader@^15.9.2:
     vue-hot-reload-api "^2.3.0"
     vue-style-loader "^4.1.0"
 
+vue-material-slider@^2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/vue-material-slider/-/vue-material-slider-2.1.0.tgz#8e9c62ef723424ad6ea1d9dd22b0fd16fc900b32"
+  integrity sha512-qwkORIq/4QgTgNgAwSd7Af9o3QrdsbE509YHDlB9e+QiCrT60/ynD9BMgA6N34xh480Dc7wvWYppb92o7KnnAQ==
+  dependencies:
+    vue "^2.6.12"
+
 vue-material@^1.0.0-beta-15:
   version "1.0.0-beta-15"
   resolved "https://registry.yarnpkg.com/vue-material/-/vue-material-1.0.0-beta-15.tgz#949025464f8fe2ff3b9be2ba1365d9eab770ad8a"
@@ -8345,7 +8352,7 @@ vue-wamp@^3.1.6:
     when "^3.7.8"
     ws "^7"
 
-vue@^2.6.10, vue@^2.6.11:
+vue@^2.6.10, vue@^2.6.11, vue@^2.6.12:
   version "2.6.14"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.6.14.tgz#e51aa5250250d569a3fbad3a8a5a687d6036e235"
   integrity sha512-x2284lgYvjOMj3Za7kqzRcUSxBboHqtgRE2zlos1qWaOye5yUmHn42LB1250NJBLRwEcdrB0JRwyPTEPhfQjiQ==
