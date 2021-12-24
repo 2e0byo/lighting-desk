@@ -17,9 +17,11 @@ jobs:
           submodules: true
           fetch-depth: "0"
 
-      # - uses: actions/setup-node@v2
-      #   with:
-      #     cache: 'yarn'
+      - uses: actions/setup-node@v2
+        with:
+          cache: 'yarn'
+          cache-dependency-path: "lighting-desk"
+
       - run: |
           cd lighting-desk
           ls .
