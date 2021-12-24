@@ -1,24 +1,31 @@
 <template>
-  <div>
-    <div>
-      <span v-if="$root.wampIsOpen">Connected</span>
-      <span v-else-if="$root.wampIsRetrying">Retrying...</span>
-      <span v-else>Disconnected</span>
-    </div>
-    <div id="app">
-      <img alt="Vue logo" src="./assets/logo.png" />
-      <Wamp />
-    </div>
+  <div class="page-container">
+    <md-app md-mode="fixed">
+      <md-app-toolbar class="md-primary">
+        <div class="md-toolbar-row">
+        <span class="md-title">Miniature Lighting Desk</span>
+        </div>
+        <div class="md-toolbar-row">
+          <span class="md-subtitle" v-if="$root.wampIsOpen">Connected to Server</span>
+          <span class="md-subttile" v-else-if="$root.wampIsRetrying">Retrying...</span>
+          <span class="md-subtitle" v-else>Disconnected</span>    
+        </div>
+      </md-app-toolbar>
+
+      <md-app-content>
+    <Channels/>
+        </md-app-content>
+    </md-app>
   </div>
 </template>
 
 <script>
-import Wamp from "./components/wamp.vue"
+import Channels from "./components/channels.vue"
 
 export default {
   name: "App",
   components: {
-    Wamp,
+    Channels
   },
 }
 </script>

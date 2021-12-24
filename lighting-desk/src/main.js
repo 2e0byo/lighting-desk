@@ -18,6 +18,27 @@ Vue.use(VueWamp, {
     auto_close_timeout: -1,
 });
 
+import 'vue-material-slider/dist/vue-material-slider.css'
+import VueMaterialSlider from 'vue-material-slider';
+Vue.use(VueMaterialSlider);
+// import {Slider} from 'vue-material-slider'
+// Vue.use(Slider)
+
+import { MdDialog, MdSwitch, MdButton} from 'vue-material/dist/components'
+import { MdCard } from 'vue-material/dist/components'
+import { MdDialogAlert } from 'vue-material/dist/components'
+import {MdApp, MdToolbar, MdContent } from 'vue-material/dist/components'
+import 'vue-material/dist/vue-material.min.css'
+import 'vue-material/dist/theme/default.css'
+
+Vue.use(MdContent)
+Vue.use(MdApp)
+Vue.use(MdToolbar)
+Vue.use(MdSwitch)
+Vue.use(MdButton)
+Vue.use(MdDialog)
+Vue.use(MdDialogAlert)
+Vue.use(MdCard)
 
 Vue.config.productionTip = false
 
