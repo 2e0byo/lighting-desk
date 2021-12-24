@@ -30,6 +30,8 @@ jobs:
 
       - run: |
           cd lighting-desk
+          ls .
+          pwd
           yarn install
           yarn build
 
