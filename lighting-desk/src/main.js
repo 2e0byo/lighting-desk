@@ -6,7 +6,7 @@ import App from './App.vue'
 import VueWamp from 'vue-wamp'
 
 Vue.use(VueWamp, {
-     url: 'ws://wamp.2e0byo.co.uk:3227/ws',
+     url: 'wss://wamp.2e0byo.co.uk:3227/ws',
     // url: 'ws://demo.crossbar.io/ws',
     realm: 'miniature-lighting-controller',
 
