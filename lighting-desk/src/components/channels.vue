@@ -7,10 +7,6 @@
       :val="val"
       :ref="`Channel${index}`"
     />
-    <!-- <Channel
-         :number="3"
-         :val="7"
-         /> -->
     </div>
     <div v-else>
       <md-dialog-prompt
