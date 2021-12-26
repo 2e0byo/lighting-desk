@@ -9,6 +9,9 @@ Vue.use(VueWamp, {
      url: 'wss://wamp.2e0byo.co.uk:3227/ws',
     // url: 'ws://demo.crossbar.io/ws',
     realm: 'miniature-lighting-controller',
+    authmethods: ["ticket"],
+    authid: "public",
+    onchallenge: function () {return ""},
 
     // change this in case of naming conflict
     namespace: 'wamp',
