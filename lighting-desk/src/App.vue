@@ -3,18 +3,22 @@
     <md-app md-mode="fixed">
       <md-app-toolbar class="md-primary">
         <div class="md-toolbar-row">
-        <span class="md-title">Miniature Lighting Desk</span>
+          <span class="md-title">Miniature Lighting Desk</span>
         </div>
         <div class="md-toolbar-row">
-          <span class="md-subtitle" v-if="$root.wampIsOpen">Connected to Server</span>
-          <span class="md-subttile" v-else-if="$root.wampIsRetrying">Retrying...</span>
-          <span class="md-subtitle" v-else>Disconnected</span>    
+          <span class="md-subtitle" v-if="$root.wampIsOpen"
+            >Connected to Server</span
+          >
+          <span class="md-subttile" v-else-if="$root.wampIsRetrying"
+            >Retrying...</span
+          >
+          <span class="md-subtitle" v-else>Disconnected</span>
         </div>
       </md-app-toolbar>
 
       <md-app-content>
-    <Channels/>
-        </md-app-content>
+        <Channels />
+      </md-app-content>
     </md-app>
   </div>
 </template>
@@ -25,7 +29,7 @@ import Channels from "./components/channels.vue"
 export default {
   name: "App",
   components: {
-    Channels
+    Channels,
   },
 }
 </script>

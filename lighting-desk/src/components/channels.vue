@@ -7,9 +7,9 @@
       :val="val"
       :ref="`Channel${index}`"
     />
-    </div>
-    <div v-else>
-      <md-dialog-prompt
+  </div>
+  <div v-else>
+    <md-dialog-prompt
       :md-active.sync="!$root.wampIsOpen"
       v-model="password"
       md-title="Enter Password"
