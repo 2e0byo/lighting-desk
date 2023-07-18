@@ -21,6 +21,7 @@ jobs:
         with:
           cache: 'yarn'
           cache-dependency-path: "lighting-desk"
+          version: "13.7"
 
       - run: |
           cd lighting-desk
