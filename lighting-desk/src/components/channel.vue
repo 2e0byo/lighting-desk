@@ -8,7 +8,7 @@
 
     <vue-material-slider
       :min="0"
-      :max="256"
+      :max="max"
       :vertical="true"
       :disabled="disabled"
       :thumbLabel="true"
@@ -36,6 +36,7 @@ export default {
   props: {
     number: Number,
     initialVal: Number,
+    max: Number,
   },
   data() {
     return {

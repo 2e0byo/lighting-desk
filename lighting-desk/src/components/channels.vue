@@ -6,6 +6,7 @@
       :number="index"
       :val="val"
       :ref="`Channel${index}`"
+      :max="max"
     />
   </div>
   <div v-else>
@@ -33,12 +34,17 @@ export default {
       controllerName: null,
       vals: [],
       password: "",
+      max: 0,
     }
   },
   wamp: {
     subscribe: {
       "controller.statechange"(args) {
-        args[0].forEach((val, i) => (this.$refs[`Channel${i}`][0].val = val))
+        args[0].forEach((val, i) => {
+          console.log(this.$refs)
+          const channel = this.$refs[`Channel${i}`][0]
+          channel.val = val
+        });
       },
     },
   },
@@ -54,6 +60,7 @@ export default {
       this.$wamp._connection.open()
       const info = await this.$wamp.call("details")
       this.vals = info.vals
+      this.max=info.max_brightness
     },
   },
 }
